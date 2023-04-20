@@ -1,0 +1,26 @@
+//** partials and @import **
+
+// variables
+@import 'functions';
+@import 'variables';
+
+// main and layout
+@import 'main';
+@import 'colors';
+@import 'breakpoints';
+@import 'grid';
+
+// utilities (margin, padding, opacity,...)
+@import 'utilities';
+
+// components (buttons, cards, navbar,...)
+@import 'cards';
+@import 'buttons';
+@import 'navbar-header';
+@import 'navbar';
+
+// Analogue Clock
+@import 'topbtn';
+@import 'animation';
+@import 'clock';
+

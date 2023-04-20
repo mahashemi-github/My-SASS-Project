@@ -1,0 +1,92 @@
+@use "sass:math";
+
+@each $key, $val in $colors {  
+    .colors-container > * {
+      display: inline-block;
+      border: 0;
+      border-radius: $main-border-radius;
+      padding: $main-padding $main-padding;
+      margin: math.div($main-margin, 2) 0;
+    }
+    .text-#{$key} {
+      color: $val;
+    }
+    .text-hover-#{$key} {
+      &:hover {
+        color: map-get($colors , 'white' );
+        background-color: $val;
+      }
+    }
+
+    .bg-#{$key} {
+      background-color: $val;
+    }
+    @if ($val != black and $val != white) {
+      @for $i from 1 through 9 {
+        .text-#{$key}-light-#{$i} {
+          color: mix(white, $val, $i * 10%);
+        }
+        .bg-#{$key}-light-#{$i} {
+          background-color: mix(white, $val, $i * 10%);
+        }
+      }  
+      @for $i from 1 through 9 {
+        .text-#{$key}-dark-#{$i} {
+          color: mix(black, $val, $i * 10%);
+        }
+        .bg-#{$key}-dark-#{$i} {
+          background-color: mix(black, $val, $i * 10%);
+        }
+      }
+    }
+  }
+
+.bg-primary-red-channel {
+  background-color: red(map-get($colors , 'primary' ));
+}
+.bg-primary-green-channel {
+  background-color: green(map-get($colors , 'primary' ));
+}
+.bg-primary-blue-channel {
+  background-color: blue(map-get($colors , 'primary' ));
+}
+.bg-primary-hue {
+  &:after{
+    content: "= #{round(hue(map-get($colors , 'primary' )))}";
+  }  
+}
+.bg-primary-saturation {
+  &:after{
+    content: "= #{round(saturation(map-get($colors , 'primary' )))}";
+  }
+}
+.bg-primary-alpha {
+  &:after{
+    content: "= #{round(alpha(map-get($colors , 'primary' )))}";
+  }
+}
+.bg-primary-lightness {
+  &:after{
+    content: "= #{round(lightness(map-get($colors , 'primary' )))}";
+  }
+}
+.bg-primary-complement {
+  background-color: complement(map-get($colors , 'primary' ));
+}
+.bg-primary-darken {
+  background-color: darken(map-get($colors , 'primary' ), 20%);
+}
+.bg-primary-lighten {
+  background-color: lighten(map-get($colors , 'primary' ), 20%);
+}
+.bg-primary-desaturate {
+  background-color: desaturate(map-get($colors , 'primary' ), 20%);
+}
+.bg-primary-grayscale {
+  background-color: grayscale(map-get($colors , 'primary' ));
+}
+.bg-primary-invert {
+  background-color: invert(map-get($colors , 'primary' ), 20%);
+}
+
+  // &:nth-child, &:active, &:visited, &:last-child etc

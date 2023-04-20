@@ -1,0 +1,59 @@
+@use 'sass:math';
+
+.card {
+  padding: $main-padding * 2;
+  border: $main-border-thickness solid #ddd;
+  box-shadow: $main-box-shadow-2;
+  border-radius: math.div($main-border-radius, 2);
+  min-width: 120px;
+  .card-title {
+    font-size: $main-font-size;
+    padding-bottom: $main-padding;
+    font-weight: bold;
+  }
+  .card-body {
+    font-size: $main-font-size * 0.8;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin breakpoint($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+.card-image-w100 {
+  background-color: blueviolet;
+  display: inline-block;
+  @extend .card;
+  img {
+    width: 100%;
+    margin-bottom: $main-margin;
+  }
+}
+.card-image-responsive {
+  background-color: blueviolet;
+  @extend .card;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $main-margin * 2;
+  @include breakpoint(400px) {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 0;
+    img {    
+      float: none;
+      margin-bottom: $main-margin;
+      margin-right: 0;
+    }
+  }
+}
+
+// @debug math.div(10, 3);
+// @debug math.$pi;
+// @debug math.floor(2.6);
+// @debug math.max(1px, 20px, 15px, 12px);

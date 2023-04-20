@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mahashi SASS Library</title>
+</head>
+<body>
+    <nav class="navbar-black o-60 text-white mb-4">
+        <div class="container">
+          <h1 class="site-title">Mahashi CSS</h1>
+          <p>Welcome, this is a SASS library</p>
+        </div>
+    </nav>
+
+    <div class="container">        
+        <button onclick="topFunction()" class="topbtn" id="myBtn" title="Go to Top">Go to Top</button>
+
+        <section id="container-analog">
+            <div class="container-clock-out">
+                <div class="container-clock-in">        
+                    <div class="clock">
+                        <span style="--i:1;"><b>1</b></span>
+                        <span style="--i:2;"><b>2</b></span>
+                        <span style="--i:3;"><b>3</b></span>
+                        <span style="--i:4;"><b>4</b></span>
+                        <span style="--i:5;"><b>5</b></span>
+                        <span style="--i:6;"><b>6</b></span>
+                        <span style="--i:7;"><b>7</b></span>
+                        <span style="--i:8;"><b>8</b></span>
+                        <span style="--i:9;"><b>9</b></span>
+                        <span style="--i:10;"><b>10</b></span>
+                        <span style="--i:11;"><b>11</b></span>
+                        <span style="--i:12;"><b>12</b></span>          
+                    </div>
+            
+                    <div class="mark">
+                        <span style="--ii:1;"><b></b></span>
+                        <span style="--ii:2;"><b></b></span>
+                        <span style="--ii:3;"><b></b></span>
+                        <span style="--ii:4;"><b></b></span>
+                        <span style="--ii:5;"><b></b></span>
+                        <span style="--ii:6;"><b></b></span>
+                        <span style="--ii:7;"><b></b></span>
+                        <span style="--ii:8;"><b></b></span>
+                        <span style="--ii:9;"><b></b></span>
+                        <span style="--ii:10;"><b></b></span>
+                        <span style="--ii:11;"><b></b></span>
+                        <span style="--ii:12;"><b></b></span>
+                    </div>
+            
+                    <div class="smallmark">
+                        <span style="--iii:1;"><b></b></span>
+                        <span style="--iii:2;"><b></b></span>
+                        <span style="--iii:3;"><b></b></span>
+                        <span style="--iii:4;"><b></b></span>
+                        <span style="--iii:6;"><b></b></span>
+                        <span style="--iii:7;"><b></b></span>
+                        <span style="--iii:8;"><b></b></span>
+                        <span style="--iii:9;"><b></b></span>
+                        <span style="--iii:11;"><b></b></span>
+                        <span style="--iii:12;"><b></b></span>
+                        <span style="--iii:13;"><b></b></span>
+                        <span style="--iii:14;"><b></b></span>
+                        <span style="--iii:16;"><b></b></span>
+                        <span style="--iii:17;"><b></b></span>
+                        <span style="--iii:18;"><b></b></span>
+                        <span style="--iii:19;"><b></b></span>
+                        <span style="--iii:21;"><b></b></span>
+                        <span style="--iii:22;"><b></b></span>
+                        <span style="--iii:23;"><b></b></span>
+                        <span style="--iii:24;"><b></b></span>
+                        <span style="--iii:26;"><b></b></span>
+                        <span style="--iii:27;"><b></b></span>
+                        <span style="--iii:28;"><b></b></span>
+                        <span style="--iii:29;"><b></b></span>
+                        <span style="--iii:31;"><b></b></span>
+                        <span style="--iii:32;"><b></b></span>
+                        <span style="--iii:33;"><b></b></span>
+                        <span style="--iii:34;"><b></b></span>
+                        <span style="--iii:36;"><b></b></span>
+                        <span style="--iii:37;"><b></b></span>
+                        <span style="--iii:38;"><b></b></span>
+                        <span style="--iii:39;"><b></b></span>
+                        <span style="--iii:41;"><b></b></span>
+                        <span style="--iii:42;"><b></b></span>
+                        <span style="--iii:43;"><b></b></span>
+                        <span style="--iii:44;"><b></b></span>
+                        <span style="--iii:46;"><b></b></span>
+                        <span style="--iii:47;"><b></b></span>
+                        <span style="--iii:48;"><b></b></span>
+                        <span style="--iii:49;"><b></b></span>
+                        <span style="--iii:51;"><b></b></span>
+                        <span style="--iii:52;"><b></b></span>
+                        <span style="--iii:53;"><b></b></span>
+                        <span style="--iii:54;"><b></b></span>
+                        <span style="--iii:56;"><b></b></span>
+                        <span style="--iii:57;"><b></b></span>
+                        <span style="--iii:58;"><b></b></span>
+                        <span style="--iii:59;"><b></b></span>
+                    </div>
+                    
+                    <div class="hour"></div>
+                    <div class="minute"></div>
+                    <div class="second"></div>
+                    <div class="pin"></div>  
+                </div>
+            </div>  
+
+            <div class="waviy">
+                <div class="wrapper"><div class="typing-demo">Hi! This is a </div></div>
+                <span style="--i:1">S</span>
+                <span style="--i:2">A</span>
+                <span style="--i:3">S</span>
+                <span style="--i:4">S</span>
+                <span style="--i:5">&nbsp; L</span>
+                <span style="--i:6">i</span>
+                <span style="--i:7">b</span>
+                <span style="--i:8">r</span>
+                <span style="--i:9">a</span>
+                <span style="--i:10">r</span>
+                <span style="--i:11">y</span>        
+            </div>
+
+        </section>  <!-- ****** end of Clock App ******  -->
+
+        <!-- colors -->
+        <h2 class="mb-2"><span>Colors</span></h2>
+        <div class="colors-container">
+            <span>- Iterating over a map of colors (sass @each loop): </span><br>
+            <span class="bg-primary text-white">bg primary</span> |
+            <span class="bg-secondary text-white">bg secondary</span> |
+            <span class="bg-error text-white">bg error</span> |
+            <span class="bg-info text-white">bg info</span> |
+            <span class="bg-blue text-white">bg blue</span> |
+            <span class="bg-red text-white">bg red</span> |
+            <span class="bg-green text-white">bg green</span> |
+            <span class="bg-yellow text-white">bg yellow</span> |
+            <span class="bg-purple text-white">bg purple</span> |
+            <span class="bg-orange text-white">bg orange</span> |
+            <span class="bg-gray text-white">bg gray</span> 
+        </div>
+        
+        <div class="colors-container">
+            <span>- Hover over a map of colors: </span><br>
+            <span class="text-primary text-hover-primary">primary text</span> | 
+            <span class="text-secondary text-hover-secondary">secondary text</span> | 
+            <span class="text-error text-hover-error">error text</span> | 
+            <span class="text-info text-hover-info">info text</span> | 
+            <span class="text-blue text-hover-blue">blue text</span> | 
+            <span class="text-red text-hover-red">red text</span> |
+            <span class="text-green text-hover-green">green text</span> | 
+            <span class="text-yellow text-hover-yellow">yellow text</span> | 
+            <span class="text-purple text-hover-purple">purple text</span> | 
+            <span class="text-orange text-hover-orange">orange text</span> | 
+            <span class="text-gray text-hover-gray">gray text</span>
+        </div>
+        
+        <div class="colors-container">
+            <span>- Mixing a selected color with white and black (mix() sass color function and sass @for loop): </span><br>
+            <span class="bg-primary-dark-8 text-white">darkened 80%</span> |
+            <span class="bg-primary-dark-6 text-white">darkened 60%</span> |
+            <span class="bg-primary-dark-4 text-white">darkened 40%</span> |
+            <span class="bg-primary-dark-2 text-white">darkened 20%</span> |
+            <span class="bg-primary text-white">primary</span> |
+            <span class="bg-primary-light-2 text-white">lightened 20%</span> |
+            <span class="bg-primary-light-4 text-white">lightened 40%</span> |
+            <span class="bg-primary-light-6 text-white">lightened 60%</span> |
+            <span class="bg-primary-light-8 text-white">lightened 80%</span> 
+        </div>
+        
+        <div class="colors-container">
+            <span>- A selected color's properties - sass color functions (red(), green(), bue(), hue(), saturation(), alpha(), lightness(), complement, darken(), lighten(), desaturate(), grayscale(), invert()): </span><br>
+            <span class="bg-primary text-white">primary</span> |
+            <span class="bg-primary-red-channel text-white">red channel</span> |
+            <span class="bg-primary-green-channel text-white">green channel</span> |
+            <span class="bg-primary-blue-channel text-white">blue channel</span> |
+            <span class="bg-primary-hue">hue </span> |
+            <span class="bg-primary-saturation">saturation </span> |
+            <span class="bg-primary-alpha">alpha </span> |
+            <span class="bg-primary-lightness">lightness</span> |
+            <span class="bg-primary-complement">complement</span> |
+            <span class="bg-primary-darken text-white">darken-20%</span> |
+            <span class="bg-primary-lighten text-white">lighten-20%</span> |
+            <span class="bg-primary-desaturate text-white">desaturate-20%</span> |
+            <span class="bg-primary-grayscale text-white">grayscale</span> |
+            <span class="bg-primary-invert text-white">invert-20%</span> 
+        </div>
+        <br><br>
+
+        <!-- utilities -->  
+        <h2><span>Using Utilities</span></h2>        
+        <span>- This section is styled using sass nested maps, sass @each loop and @if conditional to set margins, paddings, border radii, opacities, font sizes and display sets. </span>
+        <br><br>
+
+        <div class="fsize-sm display-i-b bg-purple text-white o-10 mt-1 mr-1 p-1 br-sm">this is small font, opacity 10. </div><br>
+        <div class="fsize-md display-i-b bg-purple text-white o-30 mt-1 mr-1 p-1 br-md">this is medium font, opacity 30.</div><br>
+        <div class="fsize-lg display-i-b bg-purple text-white o-50 mt-1 mr-1 p-1 br-lg">this is large font, opacity 50.</div><br>
+        <div class="fsize-xl display-i-b bg-purple text-white o-70 mt-1 mr-1 p-1 br-xlg">this is extra large font, opacity 70.</div><br>
+        <br><br>
+
+        <!-- buttons -->
+        <h2 class="mb-2"><span>Buttons</span></h2>
+        <span>- Buttons are styled using sass @mixin, @function, @each and @for loops over a map of colors. </span>
+        <br><br>
+
+        <a href="#" class="btn">default btn</a>
+        <a href="#" class="btn-primary text-white">click me</a>
+        <a href="#" class="btn-secondary text-white">click me</a>
+        <a href="#" class="btn-error text-white">click me</a>
+        <a href="#" class="btn-info">click me</a>
+        <a href="#" class="btn-outlined-purple text-purple text-hover-white">click me</a>
+        <a href="#" class="btn-outlined-orange text-orange text-hover-white">click me</a>
+        <a href="#" class="btn-complement-purple">click me</a>
+        <a href="#" class="btn-complement-primary">click me</a>
+        <br><br>
+
+        <a class="btn-orange button-arrow text-white"><span>Hover </span></a>
+        <a class="btn-primary button-click text-white"><span>Click </span></a>
+        <button class="btn-purple btn-loading text-white"><i class="fa fa-spinner fa-spin"></i> Loading</button>
+        <button class="btn-purple btn-loading text-white"><i class="fa fa-circle-o-notch fa-spin"></i> Loading</button>
+        <button class="btn-purple btn-loading text-white"><i class="fa  fa-refresh fa-spin"></i> Refresh Loading</button>
+        <button class="button-55">Stylish Button</button>
+        <br><br><br>
+
+        <!-- cards -->
+        <h2 class="mb-2"><span>Cards</span></h2>
+        <div class="gap-2 justify-center clearfix">
+            <div class="card-image-w100 m-2 w-per-25 br-md" style="float: left;" style="float: left;">
+                <img src="/images/1.jpg" alt="image">
+                <div class="content">
+                <h4>Card Title</h4>
+                <p class="card-body fsize-xs">Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>.</p>
+                </div>
+            </div>
+
+            <div class="card-image-responsive m-2 w-per-50 br-md clearfix">
+                <img src="/images/2.jpg" alt="image">
+                <div class="content">
+                <h4>Card Title - responsive</h4>
+                <p class="card-body fsize-xs">Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- grid system -->
+        <h2 class="mb-2"><span>Responsive Grid System</span></h2>
+        <div class="responsive-test fw-600 fsize-md">Changine Color - Responsive Test: <span> Breakpoint </span> </div>
+
+        <div class="row gap-2 justify-center">
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- grid system -->
+        <h2 class="mb-2"><span>Responsive Navigation Bars</span></h2>
+        <br>
+        <div class="topnav">
+            <a class="active-nav-btn" href="#">Home</a>
+            <a href="#">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div>    
+            <div class="search-container">
+              <form>
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+
+
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <script src="js/dynamic_clock.js"></script>
+    <script src="js/topbtn.js"></script>
+</body>
+</html>

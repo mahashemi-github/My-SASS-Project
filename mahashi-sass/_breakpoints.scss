@@ -1,0 +1,90 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 470px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+.responsive-test {
+  text-align: center;
+    @include xs {
+        color: gold;
+        & span:after{
+          content: "\003C\0020 #{map-get($breakpoints, "sm")}";
+        }  
+    }
+    @include sm {
+        color: crimson;
+        & span:after{
+          content: " \003C\0020 #{map-get($breakpoints, "md")}";
+        }  
+        & span:before{
+          content: "#{map-get($breakpoints, "sm")} \003C ";
+        }
+    }
+    @include md {
+        color: purple;
+        & span:after{
+          content: " \003C\0020 #{map-get($breakpoints, "lg")}";
+        }  
+        & span:before{
+          content: "#{map-get($breakpoints, "md")} \003C ";
+        }
+    }
+    @include lg {
+        color: darkblue;
+        & span:after{
+          content: " \003C\0020 #{map-get($breakpoints, "xl")}";
+        }  
+        & span:before{
+          content: "#{map-get($breakpoints, "lg")} \003C ";
+        }
+    }
+    @include xl {
+        color: green;
+        & span:after{
+          content: " \003C\0020 #{'1400px'}";
+        }  
+        & span:before{
+          content: "#{map-get($breakpoints, "xl")} \003C ";
+        }
+    }
+    @include breakpoint(1400px) {
+        color: cadetblue;
+        & span:after{
+          content: " \003E\0020 #{'1400px'}";
+        }  
+    }
+}

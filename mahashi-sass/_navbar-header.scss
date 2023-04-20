@@ -1,0 +1,27 @@
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-width: 320px;
+  }  
+  .navbar {
+    @extend %flex-layout;
+    padding: $main-padding $main-padding * 2;
+    box-shadow: $main-box-shadow;
+    .site-title {
+      font-size: $font-size-lg;
+    }
+    .container {
+      @extend %flex-layout;
+    }
+  }  
+  @each $key, $val in $colors {
+    .navbar-#{$key} {
+      @extend .navbar;
+      background-color: $val;
+    }
+  }
+
+  
